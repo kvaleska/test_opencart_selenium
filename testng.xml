@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite thread-count="1" verbose="1" name="OpemCart App Test Suite"
+	annotations="JDK" parallel="tests">
+
+	<test name="Search">
+		<classes>
+			<class name="com.cart.selenium.store.Search" />
+		</classes>
+	</test>
+
+
+	<test name="AddItem" enabled="true">
+		<classes>
+			<class name="com.cart.selenium.cart.AddItem" />
+		</classes>
+	</test>
+
+	<test name="ViewCart" enabled="true">
+		<classes>
+			<class name="com.cart.selenium.cart.ViewCart" />
+		</classes>
+	</test>
+
+	<test name="RemoveItem" enabled="true">
+		<classes>
+			<class name="com.cart.selenium.cart.RemoveItem" />
+		</classes>
+	</test>
+
+
+</suite>
